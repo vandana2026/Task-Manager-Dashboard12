@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Manager Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+  
+  <div class="sidebar">
+    <h2 class="logo">⚡Dashboard</h2>
+    <ul>
+      <li class="nav active" data-section="dashboard">🏠 Dashboard</li>
+      <li class="nav" data-section="tasks">📋 Tasks</li>
+      <li class="nav" data-section="profile">👤 Profile</li>
+    </ul>
+  </div>
+
+ 
+  <div class="main">
+
+   
+    <div id="dashboard" class="section active">
+      <h1>Task Manager Dashboard</h1>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Total Tasks</h3>
+          <p id="total">0</p>
+        </div>
+        <div class="card">
+          <h3>Completed</h3>
+          <p id="completed">0</p>
+        </div>
+        <div class="card">
+          <h3>Pending</h3>
+          <p id="pending">0</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="tasks" class="section">
+      <h1>Manage Tasks</h1>
+
+      <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Enter your task">
+        <button id="addBtn">Add Task</button>
+      </div>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+        <button class="filter-btn" data-filter="pending">Pending</button>
+      </div>
+
+      <div class="task-list" id="taskList"></div>
+    </div>
+
+  
+    <div id="profile" class="section">
+      <div class="profile-card">
+        <img src="https://i.pravatar.cc/150?img=11">
+        <h2>Vandana Prajapati</h2>
+        <p>B.Tech CSE (AI & DS)</p>
+        <p>Future AI Researcher 🚀</p>
+        <div class="profile-buttons">
+          <button>LinkedIn</button>
+          <button>GitHub</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
